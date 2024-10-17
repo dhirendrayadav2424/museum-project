@@ -1,0 +1,56 @@
+.search-bar {
+    display: flex;
+    margin-bottom: 100px; /* Add some space below the search bar */
+}
+
+.search-input {
+    flex-grow: 1; /* Make the input take up available space */
+    width: 400px; 
+    padding: 12px 15px; 
+    border: 1px solid #ccc;
+    border-radius: 30px; /* More rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+} 
+
+.search-input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #06274a; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow effect on focus */
+}
+
+.search-input::placeholder {
+    color: #aaa; /* Placeholder text color */
+    opacity: 1; /* Ensures the color is visible */
+    transition: color 0.3s; /* Smooth transition for placeholder color */
+}
+
+.search-input:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+/* for search button  */
+.search-button {
+    padding: 10px 15px;
+    margin-left: 100px; 
+    margin-right: 110px; 
+    margin-top: 15px; 
+    margin-bottom: 215px;
+    background-color: salmon; /* Change as needed */
+    color: white;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: darkblue; /* Change on hover */
+    
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    width: 10; /* Adjust width as necessary */
+}
